@@ -1,4 +1,4 @@
-version: 2.1
+version: 2
 jobs:
   build:
     docker:
@@ -8,7 +8,7 @@ jobs:
       branches:
         only:
           - master
-          
+
     working_directory: ~/tmp
 
     steps:
