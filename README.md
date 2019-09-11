@@ -19,5 +19,9 @@ Instructions:
 - npm install
 - npm test
 
+# Adding Tests
+- Tests can be added by simple including new .js files in <test> folder.
+
+
 Detailed results report will available in ./Results using mocha-junit-reporter
 This repository also includes CircleCI configuration for workflows on commit/builds and daily job.
