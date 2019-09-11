@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 
 
-describe('RskJ Smoke Tests', function () {
+describe('RskJ HTTP Provider Smoke Tests', function () {
   this.timeout(10000);
   let web3;
   //let web3Full1;
