@@ -14,11 +14,11 @@ describe('RskJ WebSocket Smoke Tests', function () {
   });
 
   it('First websocket test', async () => {
-    let subscription = await web3.eth.subscribe('newBlockHeaders');
+   /* let subscription = await web3.eth.subscribe('newBlockHeaders');
     await subscription.unsubscribe(function(error, success){
       if (success) {
           console.log('Successfully unsubscribed!');
       }
-  });
+  });*/
   })
 });
