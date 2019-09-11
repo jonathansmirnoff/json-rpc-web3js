@@ -1,9 +1,6 @@
 version: 2.1
 jobs:
   build:
-    branches:
-            only:
-                - master
     docker:
       # specify the version you desire here
       - image: circleci/openjdk:8-jdk
@@ -55,6 +52,10 @@ workflows:
     commit:
         jobs:
             - build
+        filters:
+                    branches:
+                        only:
+                            - master
     daily:
         triggers:
             - schedule:
