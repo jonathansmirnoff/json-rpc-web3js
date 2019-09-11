@@ -4,7 +4,11 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/openjdk:8-jdk
-
+    filters:
+      branches:
+        only:
+          - master
+          
     working_directory: ~/tmp
 
     steps:
@@ -52,10 +56,6 @@ workflows:
     commit:
         jobs:
             - build
-        filters:
-            branches:
-                only:
-                    - master
     daily:
         triggers:
             - schedule:
