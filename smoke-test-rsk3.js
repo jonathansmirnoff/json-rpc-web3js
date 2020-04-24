@@ -3,7 +3,7 @@ const Web3 = require('web3');
 const BN = require('bignumber.js');
 const fs = require('fs');
 const path = require('path');
-const Rsk3 = require('rsk3');
+const Rsk3 = require('@rsksmart/rsk3');
 
 
 describe('RskJ Smoke Tests Using rsk3', function () {

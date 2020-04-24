@@ -3,7 +3,7 @@ const Web3 = require('web3');
 const BN = require('bignumber.js');
 const fs = require('fs');
 const path = require('path');
-const Rsk3 = require('rsk3');
+const Rsk3 = require('@rsksmart/rsk3').default;
 
 let PRIVATE_KEY = '0xc85ef7d79691fe79573b1a7064c19c1a9819ebdbd1faaab1a8ec92344438aaf4'; //cow
 let rsk3 = new Rsk3('http://127.0.0.1:4444', null, { transactionConfirmationBlocks: 1 });
