@@ -180,8 +180,8 @@ describe('RskJ Smoke Tests Using rsk3', function () {
 
     let transaction = {
       value: 0,
-      gasPrice: rsk3.utils.toHex(10000000),
-      gas: rsk3.utils.toHex(1000000),
+      gasPrice: Rsk3.utils.toHex(10000000),
+      gas: Rsk3.utils.toHex(1000000),
       data: contractData,
       chainId: 33
     };
